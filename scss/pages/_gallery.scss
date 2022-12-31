@@ -1,0 +1,26 @@
+#gallery-section {
+  min-height: 90vh;
+  margin-top: 75px;
+  padding-top: 70px;
+  h2 {
+    font-size: 3rem;
+    color: $txt-blue;
+
+    .bouncy {
+      font-size: 3rem;
+
+      &.bouncing {
+        animation: rubberband 0.5s alternate ease-out;
+        display: inline-block;
+      }
+    }
+  }
+
+  @media screen and (max-width: 756px) {
+    .carousel-item {
+      img {
+        height: 250px;
+      }
+    }
+  }
+}

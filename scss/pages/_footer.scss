@@ -1,0 +1,12 @@
+footer {
+  width: 100%;
+  height: 70px;
+  background-color: $bg-black-sec;
+  margin-inline: auto;
+  text-align: center;
+
+  p {
+    color: white;
+    line-height: 70px;
+  }
+}

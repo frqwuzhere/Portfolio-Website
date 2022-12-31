@@ -1,0 +1,64 @@
+.navbar {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+
+  &- {
+    &nav {
+      @media screen and (max-width: 992px) {
+        display: flex;
+        place-items: center;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      li {
+        font-size: 2rem;
+        display: block;
+        float: left;
+
+        width: 100px; /*new*/
+        text-align: center; /*new*/
+
+        b {
+          display: none;
+        }
+      }
+
+      a {
+        // font-family: FontAwesome;
+        color: $txt-black;
+
+        text-decoration: none;
+        display: block;
+        // padding: 15px;
+
+        font-size: 1rem;
+
+        &:hover {
+          color: $txt-blue;
+        }
+        &:hover i {
+          display: none;
+          color: $txt-blue;
+        }
+        &:hover b {
+          display: block;
+          color: $txt-blue;
+        }
+      }
+    }
+
+    &button {
+      text-decoration: none;
+
+      .btn-danger {
+        background-color: $bg-red;
+      }
+    }
+  }
+}

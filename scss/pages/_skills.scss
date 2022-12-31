@@ -1,0 +1,210 @@
+#skill-section {
+  min-height: 90vh;
+  margin-top: 30px;
+  padding-top: 100px;
+  overflow: hidden;
+
+  .row {
+    .section:nth-child(1) {
+      transform: translate(-50px, 0);
+      opacity: 0;
+      transition: 1.5s;
+      &.muncul {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+      h2 {
+        font-size: 3rem;
+        margin-bottom: 0.5em;
+        color: $txt-blue;
+        white-space: nowrap;
+
+        .bounce {
+          font-size: 3rem;
+          display: inline-block;
+
+          &.bouncing {
+            animation: rubberband 0.5s alternate ease-out;
+            display: inline-block;
+          }
+        }
+
+        // @keyframes rubberband {
+        //   from {
+        //     transform: scale3d(1, 1, 1);
+        //   }
+
+        //   30% {
+        //     transform: scale3d(1.25, 0.75, 1);
+        //     color: $txt-blue;
+        //   }
+
+        //   40% {
+        //     transform: scale3d(0.75, 1.25, 1);
+        //     color: $txt-blue;
+        //   }
+
+        //   50% {
+        //     transform: scale3d(1.15, 0.85, 1);
+        //     color: $txt-blue;
+        //   }
+
+        //   65% {
+        //     transform: scale3d(0.95, 1.05, 1);
+        //     color: $txt-blue;
+        //   }
+
+        //   75% {
+        //     transform: scale3d(1.05, 0.95, 1);
+        //     color: $txt-blue;
+        //   }
+
+        //   to {
+        //     transform: scale3d(1, 1, 1);
+        //   }
+        // }
+
+        @media screen and (max-width: 992px) {
+          white-space: pre-line;
+        }
+      }
+
+      p {
+        color: $txt-white;
+      }
+    }
+
+    .section:nth-child(2) {
+      opacity: 0;
+      transform: translate(50px, 0);
+
+      transition: 1s;
+      &.muncul {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+
+      h5 {
+        color: $txt-white;
+      }
+
+      .progress {
+        height: 2px;
+        margin-bottom: 0.5em;
+      }
+
+      .progress-bar:nth-child(1),
+      .progress-bar:nth-child(2) {
+        width: 0%;
+        transition: 2s;
+
+        &.full {
+          width: 70%;
+        }
+      }
+
+      .bg-info {
+        width: 0%;
+        transition: 1.5;
+        &.half {
+          width: 40%;
+        }
+      }
+
+      .card {
+        background-color: $card-black;
+        &- {
+          &subtitle {
+            font-size: 0.8rem;
+          }
+          &text {
+            color: $card-black;
+          }
+        }
+      }
+
+      @media screen and (max-width: 756px) {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  .slider {
+    height: 100px;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    width: 70%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+      background: linear-gradient(to right, rgb(29, 29, 29, 1) 0%, rgba(29, 29, 29, 0) 100%);
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: 15%;
+      z-index: 2;
+    }
+
+    &::before {
+      left: 0;
+      right: 0;
+    }
+
+    &::after {
+      background: linear-gradient(to left, rgb(29, 29, 29, 1) 0%, rgba(29, 29, 29, 0) 100%);
+      right: 0;
+      top: 0;
+      transform: translateZ(180deg);
+    }
+
+    .slide-track {
+      display: flex;
+      width: calc(190px * 14);
+      animation: scroll 40s linear infinite;
+
+      &:hover {
+        animation-play-state: paused;
+      }
+
+      @media screen and (max-width: 992px) {
+        width: calc(150px * 14);
+      }
+
+      .slide {
+        height: 100px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-190px * 7);
+          }
+        }
+
+        img {
+          height: 70px;
+          width: 100px;
+          filter: grayscale(100%);
+
+          @media screen and (max-width: 992px) {
+            height: 50px;
+            width: 70px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    text-align: center;
+    margin-top: -3em;
+  }
+}

@@ -1,0 +1,95 @@
+header {
+  @media screen and (max-width: 992px) {
+    margin-top: -6em;
+  }
+  .hero-section {
+    .row {
+      min-height: 85vh;
+      .col:nth-child(1) {
+        h1 {
+          color: $txt-white-sec;
+          word-spacing: 15px;
+          white-space: nowrap;
+
+          .bouncy {
+            font-size: 4.375rem;
+
+            &.bouncing {
+              animation: rubberband 0.5s alternate ease-out;
+              display: inline-block;
+            }
+
+            @media screen and (max-width: 992px) {
+              font-size: 4rem;
+            }
+
+            @media screen and (max-width: 576px) {
+              font-size: 3rem;
+            }
+          }
+
+          @keyframes rubberband {
+            from {
+              transform: scale3d(1, 1, 1);
+            }
+
+            30% {
+              transform: scale3d(1.25, 0.75, 1);
+              color: $txt-blue;
+            }
+
+            40% {
+              transform: scale3d(0.75, 1.25, 1);
+              color: $txt-blue;
+            }
+
+            50% {
+              transform: scale3d(1.15, 0.85, 1);
+              color: $txt-blue;
+            }
+
+            65% {
+              transform: scale3d(0.95, 1.05, 1);
+              color: $txt-blue;
+            }
+
+            75% {
+              transform: scale3d(1.05, 0.95, 1);
+              color: $txt-blue;
+            }
+
+            to {
+              transform: scale3d(1, 1, 1);
+            }
+          }
+        }
+        p {
+          color: $txt-white;
+        }
+
+        @media screen and (max-width: 992px) {
+          text-align: center;
+          // white-space: nowrap;
+        }
+      }
+    }
+    .col:nth-child(2) {
+      .profil {
+        width: 40em;
+
+        margin-bottom: 6.25em;
+        transform: rotate(20deg) translate(50px, 0);
+        opacity: 0;
+        transition: 0.5s;
+
+        &.show {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
+    }
+  }
+}

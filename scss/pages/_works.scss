@@ -1,0 +1,47 @@
+#work-section {
+  text-align: center;
+  min-height: 90vh;
+  padding-top: 4.9em;
+  margin-top: 3em;
+  margin-bottom: 10em;
+  h2 {
+    font-size: 3rem;
+    color: $txt-blue;
+  }
+  .subtitle {
+    margin-bottom: 4em;
+    color: $txt-white;
+    font-size: 1.5rem;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    .card {
+      border: none;
+      width: 20rem;
+      background-color: $card-black;
+      color: $txt-white;
+      &- {
+        &title {
+          font-weight: 700;
+        }
+      }
+
+      img {
+        transition: 0.5s all;
+        &:hover {
+          transform: scale(3);
+
+          @media screen and (max-width: 992px) {
+            transform: scale(1.5);
+          }
+        }
+      }
+
+      @media screen and (max-width: 992px) {
+        width: 16rem;
+      }
+    }
+  }
+}

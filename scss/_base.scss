@@ -1,0 +1,17 @@
+// color
+$bg-dark: #1d1d1d;
+$bg-black-sec: #181818;
+$txt-blue: #08fdd8;
+$txt-black: #6a8385;
+$txt-white-sec: #fff;
+$txt-white: #d3dcd3;
+$bg-red: #ee1d52;
+$card-black: #2a2a2a;
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: $bg-dark;
+  font-size: 13px;
+  box-sizing: border-box;
+}
