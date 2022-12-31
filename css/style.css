@@ -411,6 +411,7 @@ header .hero-section .col:nth-child(2) .profil.show {
   display: grid;
   place-items: center;
   padding-top: 10em;
+  box-sizing: border-box;
 }
 #quotes-section .container {
   display: flex;
@@ -418,15 +419,14 @@ header .hero-section .col:nth-child(2) .profil.show {
   color: #d3dcd3;
 }
 #quotes-section .container .quote {
-  width: 27%;
+  width: 800px;
   text-align: center;
   font-style: italic;
 }
 #quotes-section .container .quote p {
-  font-size: 3rem;
-}
-#quotes-section .container .quote p.hidden {
-  display: none;
+  font-size: 2.5rem;
+  white-space: nowrap;
+  box-sizing: border-box;
 }
 
 #contact-section {
