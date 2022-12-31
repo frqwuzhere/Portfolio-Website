@@ -353,32 +353,36 @@ header .hero-section .col:nth-child(2) .profil.show {
   color: #d3dcd3;
   font-size: 1.5rem;
 }
-#work-section .container {
+#work-section .container .row {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  gap: 20px;
 }
-#work-section .container .card {
+#work-section .container .row .card {
   border: none;
-  width: 20rem;
   background-color: #2a2a2a;
   color: #d3dcd3;
+  padding: 0;
 }
-#work-section .container .card-title {
+#work-section .container .row .card img {
+  height: 150px;
+}
+#work-section .container .row .card-title {
   font-weight: 700;
 }
-#work-section .container .card img {
+#work-section .container .row .card img {
   transition: 0.5s all;
 }
-#work-section .container .card img:hover {
+#work-section .container .row .card img:hover {
   transform: scale(3);
 }
 @media screen and (max-width: 992px) {
-  #work-section .container .card img:hover {
+  #work-section .container .row .card img:hover {
     transform: scale(1.5);
   }
 }
 @media screen and (max-width: 992px) {
-  #work-section .container .card {
+  #work-section .container .row .card {
     width: 16rem;
   }
 }
@@ -410,23 +414,31 @@ header .hero-section .col:nth-child(2) .profil.show {
   min-height: 95vh;
   display: grid;
   place-items: center;
-  padding-top: 10em;
   box-sizing: border-box;
+}
+@media screen and (max-width: 992px) {
+  #quotes-section {
+    height: auto;
+  }
 }
 #quotes-section .container {
   display: flex;
   justify-content: center;
+  align-items: center;
   color: #d3dcd3;
 }
 #quotes-section .container .quote {
-  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-style: italic;
 }
 #quotes-section .container .quote p {
   font-size: 2.5rem;
-  white-space: nowrap;
-  box-sizing: border-box;
+  display: inline-block;
+  height: 400px;
+  padding-top: 100px;
 }
 
 #contact-section {
