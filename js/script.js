@@ -54,7 +54,7 @@ contact.forEach((item, i) => {
   });
 });
 
-(function () {
+{
   let words = [
       "' Love is like a fart. If you have to force it, it's probably shit ' ",
       "'' Money is like the 6th sense . It allows u to enjoy your other 5 ''",
@@ -73,4 +73,4 @@ contact.forEach((item, i) => {
         .fadeIn();
     });
   }, 7000);
-})();
+}
