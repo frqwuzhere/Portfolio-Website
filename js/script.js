@@ -64,6 +64,7 @@ contact.forEach((item, i) => {
       " '' To move forward, we have to leave something behind. '' ",
       " '' 당신이 만날 때 가장 반갑고 헤어질 때 가장 힘든 사람이 되고 싶습니다. '' ",
       " '' 道場で泣き戦場で笑う. '' ",
+      " '' 你也許已走出我的視線，但從未走出我的思念 '' ",
     ],
     i = 0;
   setInterval(function () {
