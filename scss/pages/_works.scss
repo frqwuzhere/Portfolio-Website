@@ -8,6 +8,15 @@
   h2 {
     font-size: 3rem;
     color: $txt-blue;
+
+    .bouncy {
+      font-size: 3rem;
+
+      &.bouncing {
+        animation: rubberband 0.5s alternate ease-out;
+        display: inline-block;
+      }
+    }
   }
   .subtitle {
     margin-bottom: 4em;

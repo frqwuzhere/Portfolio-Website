@@ -348,6 +348,14 @@ header .hero-section .col:nth-child(2) .profil.show {
   font-size: 3rem;
   color: #08fdd8;
 }
+#work-section h2 .bouncy {
+  font-size: 3rem;
+}
+#work-section h2 .bouncy.bouncing {
+  -webkit-animation: rubberband 0.5s alternate ease-out;
+          animation: rubberband 0.5s alternate ease-out;
+  display: inline-block;
+}
 #work-section .subtitle {
   margin-bottom: 4em;
   color: #d3dcd3;

@@ -54,10 +54,20 @@ contact.forEach((item, i) => {
   });
 });
 
+const work = document.querySelectorAll("#work-section .bouncy");
+work.forEach((item, i) => {
+  item.addEventListener("mouseover", () => {
+    item.classList.add("bouncing");
+    setTimeout(function () {
+      item.classList.remove("bouncing");
+    }, 1200);
+  });
+});
+
 {
   let words = [
-      "' Love is like a fart. If you have to force it, it's probably shit ' ",
-      "'' Money is like the 6th sense . It allows u to enjoy your other 5 ''",
+      " '' Love is like a fart. If you have to force it, it's probably shit '' ",
+      " '' Money is like the 6th sense . It allows u to enjoy your other 5 ''",
       " '' The only thing more painful than being an active forgetter is to be an inert rememberer. Jhonanatan S Foer '' ",
       " '' de gustibus non est disputandum '' ",
       " '' Trusting u is my decision, proving u wrong is your choice. Patrick Star'' ",
