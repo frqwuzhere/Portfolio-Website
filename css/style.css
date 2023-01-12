@@ -333,7 +333,7 @@ header .hero-section .col:nth-child(2) .profil.show {
 @media screen and (max-width: 992px) {
   #skill-section {
     text-align: center;
-    margin-top: -3em;
+    margin-top: -5em;
   }
 }
 
@@ -434,6 +434,12 @@ header .hero-section .col:nth-child(2) .profil.show {
   justify-content: center;
   align-items: center;
   color: #d3dcd3;
+  padding-top: 200px;
+}
+@media screen and (max-width: 992px) {
+  #quotes-section .container {
+    padding-top: 0;
+  }
 }
 #quotes-section .container .quote {
   display: flex;
@@ -441,12 +447,23 @@ header .hero-section .col:nth-child(2) .profil.show {
   align-items: center;
   text-align: center;
   font-style: italic;
+  width: 50%;
+}
+@media screen and (max-width: 992px) {
+  #quotes-section .container .quote {
+    width: 100%;
+  }
 }
 #quotes-section .container .quote p {
   font-size: 2.5rem;
   display: inline-block;
   height: 400px;
   padding-top: 100px;
+}
+@media screen and (max-width: 992px) {
+  #quotes-section .container .quote p {
+    font-size: 2rem;
+  }
 }
 
 #contact-section {
