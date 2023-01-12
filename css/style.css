@@ -55,8 +55,7 @@ body {
   text-decoration: none;
   background: linear-gradient(90deg, #ee1d52, #08fdd8);
   background-size: 400% 400%;
-  -webkit-animation: color 2.5s infinite ease-in-out;
-          animation: color 2.5s infinite ease-in-out;
+  animation: color 2.5s ease-in-out infinite reverse;
   border-radius: 5px;
   transition: transform 0.3s;
 }
