@@ -68,7 +68,7 @@ work.forEach((item, i) => {
   let words = [
       " '' Love is like a fart. If you have to force it, it's probably shit '' ",
       " '' Money is like the 6th sense . It allows u to enjoy your other 5 ''",
-      " '' The only thing more painful than being an active forgetter is to be an inert rememberer. Jhonanatan S Foer '' ",
+      " '' The only thing more painful than being an active forgetter is to be an inert rememberer. Jhonatan S Foer '' ",
       " '' de gustibus non est disputandum '' ",
       " '' Trusting u is my decision, proving u wrong is your choice. Patrick Star'' ",
       " '' To move forward, we have to leave something behind. '' ",

@@ -55,9 +55,38 @@
 
     &button {
       text-decoration: none;
+      background: linear-gradient(90deg, $bg-red, $txt-blue);
+      background-size: 400% 400%;
+      animation: color 2.5s infinite ease-in-out;
+      border-radius: 5px;
+      transition: transform 0.3s;
 
-      .btn-danger {
-        background-color: $bg-red;
+      &:hover {
+        animation-play-state: paused;
+        color: white;
+      }
+
+      &:active {
+        transform: scale(1.1);
+      }
+
+      button {
+        color: white;
+        text-decoration: none;
+      }
+
+      @keyframes color {
+        0% {
+          background-position: 0 50%;
+        }
+
+        50% {
+          background-position: 100% 50%;
+        }
+
+        100% {
+          background-position: 0 50%;
+        }
       }
     }
   }

@@ -53,9 +53,46 @@ body {
 }
 .navbar-button {
   text-decoration: none;
+  background: linear-gradient(90deg, #ee1d52, #08fdd8);
+  background-size: 400% 400%;
+  -webkit-animation: color 2.5s infinite ease-in-out;
+          animation: color 2.5s infinite ease-in-out;
+  border-radius: 5px;
+  transition: transform 0.3s;
 }
-.navbar-button .btn-danger {
-  background-color: #ee1d52;
+.navbar-button:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  color: white;
+}
+.navbar-button:active {
+  transform: scale(1.1);
+}
+.navbar-button button {
+  color: white;
+  text-decoration: none;
+}
+@-webkit-keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 @media screen and (max-width: 992px) {
