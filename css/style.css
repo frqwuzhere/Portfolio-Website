@@ -420,8 +420,10 @@ header .hero-section .col:nth-child(2) .profil.show {
 #work-section .container .row .card img.click {
   transform: scale(2);
 }
-#work-section .container .row .card img:hover {
-  filter: brightness(30%);
+@media screen and (max-width: 992px) {
+  #work-section .container .row .card img.click {
+    transform: scale(1.2);
+  }
 }
 @media screen and (max-width: 992px) {
   #work-section .container .row .card {
@@ -447,7 +449,15 @@ header .hero-section .col:nth-child(2) .profil.show {
   display: inline-block;
 }
 #gallery-section .carousel-item img {
+  width: 500px;
+  height: 500px;
   filter: brightness(40%);
+}
+@media screen and (max-width: 992px) {
+  #gallery-section .carousel-item img {
+    width: 50px;
+    height: 200px;
+  }
 }
 
 #quotes-section {

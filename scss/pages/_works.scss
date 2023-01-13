@@ -48,10 +48,10 @@
 
           &.click {
             transform: scale(2);
-          }
 
-          &:hover {
-            filter: brightness(30%);
+            @media screen and (max-width: 992px) {
+              transform: scale(1.2);
+            }
           }
         }
 

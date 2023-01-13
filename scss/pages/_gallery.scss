@@ -18,7 +18,14 @@
 
   .carousel-item {
     img {
+      width: 500px;
+      height: 500px;
       filter: brightness(40%);
+
+      @media screen and (max-width: 992px) {
+        width: 50px;
+        height: 200px;
+      }
     }
   }
 }
