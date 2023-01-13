@@ -417,13 +417,11 @@ header .hero-section .col:nth-child(2) .profil.show {
 #work-section .container .row .card img {
   transition: 0.5s all;
 }
-#work-section .container .row .card img:hover {
+#work-section .container .row .card img.click {
   transform: scale(2);
 }
-@media screen and (max-width: 992px) {
-  #work-section .container .row .card img:hover {
-    transform: scale(1.5);
-  }
+#work-section .container .row .card img:hover {
+  filter: brightness(30%);
 }
 @media screen and (max-width: 992px) {
   #work-section .container .row .card {
@@ -448,10 +446,8 @@ header .hero-section .col:nth-child(2) .profil.show {
           animation: rubberband 0.5s alternate ease-out;
   display: inline-block;
 }
-@media screen and (max-width: 756px) {
-  #gallery-section .carousel-item img {
-    height: 250px;
-  }
+#gallery-section .carousel-item img {
+  filter: brightness(40%);
 }
 
 #quotes-section {

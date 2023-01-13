@@ -64,6 +64,13 @@ work.forEach((item, i) => {
   });
 });
 
+const img = document.querySelectorAll("#work-section img");
+img.forEach((item, i) => {
+  item.addEventListener("click", function () {
+    item.classList.toggle("click");
+  });
+});
+
 {
   let words = [
       " '' Love is like a fart. If you have to force it, it's probably shit '' ",
