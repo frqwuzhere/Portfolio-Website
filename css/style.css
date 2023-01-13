@@ -212,6 +212,12 @@ header .hero-section .col:nth-child(2) .profil.show {
   padding-top: 100px;
   overflow: hidden;
 }
+@media screen and (max-width: 992px) {
+  #skill-section {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
 #skill-section .row .section:nth-child(1) {
   transform: translate(-50px, 0);
   opacity: 0;
@@ -402,6 +408,13 @@ header .hero-section .col:nth-child(2) .profil.show {
   justify-content: space-evenly;
   gap: 20px;
 }
+@media screen and (max-width: 992px) {
+  #work-section .container .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 #work-section .container .row .card {
   border: none;
   background-color: #2a2a2a;
@@ -435,6 +448,12 @@ header .hero-section .col:nth-child(2) .profil.show {
   min-height: 90vh;
   margin-top: 75px;
   padding-top: 70px;
+}
+@media screen and (max-width: 992px) {
+  #gallery-section {
+    margin-top: 0;
+    padding-top: 30px;
+  }
 }
 #gallery-section h2 {
   font-size: 3rem;
@@ -494,6 +513,7 @@ header .hero-section .col:nth-child(2) .profil.show {
 @media screen and (max-width: 992px) {
   #quotes-section .container .quote {
     width: 100%;
+    align-items: flex-start;
   }
 }
 #quotes-section .container .quote p {
