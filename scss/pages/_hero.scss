@@ -65,6 +65,12 @@ header {
         }
         p {
           color: $txt-white;
+
+          @media screen and (max-width: 992px) {
+            display: inline-block;
+            width: 300px;
+            line-height: 2;
+          }
         }
 
         @media screen and (max-width: 992px) {

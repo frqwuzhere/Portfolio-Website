@@ -185,6 +185,13 @@ header .hero-section .row .col:nth-child(1) p {
   color: #d3dcd3;
 }
 @media screen and (max-width: 992px) {
+  header .hero-section .row .col:nth-child(1) p {
+    display: inline-block;
+    width: 300px;
+    line-height: 2;
+  }
+}
+@media screen and (max-width: 992px) {
   header .hero-section .row .col:nth-child(1) {
     text-align: center;
   }
@@ -237,6 +244,11 @@ header .hero-section .col:nth-child(2) .profil.show {
   font-size: 3rem;
   display: inline-block;
 }
+@media screen and (max-width: 992px) {
+  #skill-section .row .section:nth-child(1) h2 .bounce {
+    font-size: 2.5rem;
+  }
+}
 #skill-section .row .section:nth-child(1) h2 .bounce.bouncing {
   -webkit-animation: rubberband 0.5s alternate ease-out;
           animation: rubberband 0.5s alternate ease-out;
@@ -245,10 +257,17 @@ header .hero-section .col:nth-child(2) .profil.show {
 @media screen and (max-width: 992px) {
   #skill-section .row .section:nth-child(1) h2 {
     white-space: pre-line;
+    font-size: 2rem;
   }
 }
 #skill-section .row .section:nth-child(1) p {
   color: #d3dcd3;
+}
+@media screen and (max-width: 992px) {
+  #skill-section .row .section:nth-child(1) p {
+    display: inline-block;
+    width: 300px;
+  }
 }
 #skill-section .row .section:nth-child(2) {
   opacity: 0;
@@ -393,6 +412,11 @@ header .hero-section .col:nth-child(2) .profil.show {
 #work-section h2 .bouncy {
   font-size: 3rem;
 }
+@media screen and (max-width: 992px) {
+  #work-section h2 .bouncy {
+    font-size: 2.5rem;
+  }
+}
 #work-section h2 .bouncy.bouncing {
   -webkit-animation: rubberband 0.5s alternate ease-out;
           animation: rubberband 0.5s alternate ease-out;
@@ -461,6 +485,11 @@ header .hero-section .col:nth-child(2) .profil.show {
 }
 #gallery-section h2 .bouncy {
   font-size: 3rem;
+}
+@media screen and (max-width: 992px) {
+  #gallery-section h2 .bouncy {
+    font-size: 2.5rem;
+  }
 }
 #gallery-section h2 .bouncy.bouncing {
   -webkit-animation: rubberband 0.5s alternate ease-out;
@@ -539,6 +568,11 @@ header .hero-section .col:nth-child(2) .profil.show {
 }
 #contact-section .contact-form h2 .bouncy {
   font-size: 3rem;
+}
+@media screen and (max-width: 992px) {
+  #contact-section .contact-form h2 .bouncy {
+    font-size: 2.5rem;
+  }
 }
 #contact-section .contact-form h2 .bouncy.bouncing {
   -webkit-animation: rubberband 0.5s alternate ease-out;

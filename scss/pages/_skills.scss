@@ -28,6 +28,10 @@
           font-size: 3rem;
           display: inline-block;
 
+          @media screen and (max-width: 992px) {
+            font-size: 2.5rem;
+          }
+
           &.bouncing {
             animation: rubberband 0.5s alternate ease-out;
             display: inline-block;
@@ -71,11 +75,17 @@
 
         @media screen and (max-width: 992px) {
           white-space: pre-line;
+          font-size: 2rem;
         }
       }
 
       p {
         color: $txt-white;
+
+        @media screen and (max-width: 992px) {
+          display: inline-block;
+          width: 300px;
+        }
       }
     }
 

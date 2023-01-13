@@ -10,6 +10,10 @@
       .bouncy {
         font-size: 3rem;
 
+        @media screen and (max-width: 992px) {
+          font-size: 2.5rem;
+        }
+
         &.bouncing {
           animation: rubberband 0.5s alternate ease-out;
           display: inline-block;
