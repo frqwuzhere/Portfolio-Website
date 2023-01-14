@@ -54,6 +54,11 @@ contact.forEach((item, i) => {
   });
 });
 
+const sendBtn = document.querySelector("#contact-section button");
+sendBtn.addEventListener("click", function () {
+  alert("Sorry, this feature is still under maintenance. ");
+});
+
 const work = document.querySelectorAll("#work-section .bouncy");
 work.forEach((item, i) => {
   item.addEventListener("mouseover", () => {

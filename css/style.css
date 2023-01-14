@@ -191,6 +191,20 @@ header .hero-section .row .col:nth-child(1) p {
     line-height: 2;
   }
 }
+header .hero-section .row .col:nth-child(1) img.social-logo {
+  width: 50px;
+  height: 30px;
+  margin-right: 1em;
+}
+header .hero-section .row .col:nth-child(1) img.social-logo:hover {
+  transform: scale(1.2);
+  filter: brightness(50%);
+}
+@media screen and (max-width: 992px) {
+  header .hero-section .row .col:nth-child(1) img.social-logo {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 992px) {
   header .hero-section .row .col:nth-child(1) {
     text-align: center;
