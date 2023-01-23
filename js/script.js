@@ -15,7 +15,7 @@ $(window).scroll(function () {
 });
 
 const images = document.querySelectorAll(".hero-section .bouncy");
-images.forEach((item, i) => {
+images.forEach((item) => {
   item.addEventListener("mouseover", () => {
     item.classList.add("bouncing");
     setTimeout(function () {
@@ -25,9 +25,9 @@ images.forEach((item, i) => {
 });
 
 const txt = document.querySelectorAll("#skill-section .bounce");
-txt.forEach((item, i) => {
+txt.forEach((item) => {
   item.addEventListener("mouseover", () => {
-    item.classList.add("bouncing");
+    item.clas.add("bouncing");
     setTimeout(function () {
       item.classList.remove("bouncing");
     }, 1200);
@@ -35,7 +35,7 @@ txt.forEach((item, i) => {
 });
 
 const h2 = document.querySelectorAll("#gallery-section .bouncy");
-h2.forEach((item, i) => {
+h2.forEach((item) => {
   item.addEventListener("mouseover", () => {
     item.classList.add("bouncing");
     setTimeout(function () {
@@ -45,7 +45,7 @@ h2.forEach((item, i) => {
 });
 
 const contact = document.querySelectorAll("#contact-section .bouncy");
-contact.forEach((item, i) => {
+contact.forEach((item) => {
   item.addEventListener("mouseover", () => {
     item.classList.add("bouncing");
     setTimeout(function () {
@@ -60,7 +60,7 @@ sendBtn.addEventListener("click", function () {
 });
 
 const work = document.querySelectorAll("#work-section .bouncy");
-work.forEach((item, i) => {
+work.forEach((item) => {
   item.addEventListener("mouseover", () => {
     item.classList.add("bouncing");
     setTimeout(function () {
