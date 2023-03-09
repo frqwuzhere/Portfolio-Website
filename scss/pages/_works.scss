@@ -45,16 +45,8 @@
         color: $txt-white;
         padding: 0;
         img {
-          height: 150px;
-        }
-        &- {
-          &title {
-            font-weight: 700;
-          }
-        }
-
-        img {
           transition: 0.5s all;
+          height: 150px;
 
           &.click {
             transform: scale(2);
@@ -62,6 +54,11 @@
             @media screen and (max-width: 992px) {
               transform: scale(1.2);
             }
+          }
+        }
+        &- {
+          &title {
+            font-weight: 700;
           }
         }
 

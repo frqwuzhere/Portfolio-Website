@@ -73,22 +73,6 @@ header {
           }
         }
 
-        img.social-logo {
-          width: 50px;
-          height: 30px;
-          margin-right: 1em;
-
-          &:hover {
-            transform: scale(1.2);
-            filter: brightness(50%);
-          }
-
-          @media screen and (max-width: 992px) {
-            text-align: center;
-            // white-space: nowrap;
-          }
-        }
-
         @media screen and (max-width: 992px) {
           text-align: center;
           // white-space: nowrap;
